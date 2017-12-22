@@ -10,12 +10,12 @@ namespace JG_Final.Controllers
 {
 
     public class HomeController : Controller
-    //public class FooController : KnockoutController
-    {   
+    
+    //public class BetterListController : BaseController
+    {
         // GET: Home              
         public ActionResult Index()
         {
-            
             InitializeViewBag("Better list");
             var model = new BetterListModel
             {
@@ -28,7 +28,7 @@ namespace JG_Final.Controllers
 
         private void InitializeViewBag(string v)
         {
-            //throw new NotImplementedException();
+            new List<string>();
         }
 
         public ActionResult AddItem(BetterListModel model)
